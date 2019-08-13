@@ -1,12 +1,12 @@
-FROM phusion/baseimage:latest
+FROM phusion/baseimage:0.11
 MAINTAINER Bram Hendriks <bhendrik@gmail.com>
 
 RUN groupadd -r -g 1000 sfuser \
   && useradd -r -m -u 1000 -g 1000 sfuser
 COPY sync.sh /sync.sh
 RUN touch /etc/apt/sources.list.d/seaf.list \
-  && echo deb [trusted=yes] http://ppa.launchpad.net/seafile/seafile-client/ubuntu xenial main >> /etc/apt/sources.list.d/seaf.list \
-  && echo deb-src [trusted=yes] http://ppa.launchpad.net/seafile/seafile-client/ubuntu xenial main >> /etc/apt/sources.list.d/seaf.list \
+  && echo deb [trusted=yes] http://ppa.launchpad.net/seafile/seafile-client/ubuntu bionic main >> /etc/apt/sources.list.d/seaf.list \
+  && echo deb-src [trusted=yes] http://ppa.launchpad.net/seafile/seafile-client/ubuntu bionic main >> /etc/apt/sources.list.d/seaf.list \
   && apt-get update \
   && install_clean --install-recommends seafile-cli \
   && apt-get clean \
