@@ -62,4 +62,4 @@ By investigating the container when manually starting the client while in the co
  `seaf-daemon --daemon -c /home/sfuser/.ccnet -d /home/sfuser/seafile-client/seafile-data -w /home/sfuser/seafile-client/seafile`
  
 When you remove the `--deamon` part from this it will run in the foreground, so this is used in the run file together with the `/sbin/setuser` utility to start it as the user sfuser.
-The run file is started by ´/etc/my_init`.
+The run file is started by `/etc/my_init`.
