@@ -50,6 +50,11 @@ If you go to your Seafile server and select your library, the Library-id is the 
 e.g.
 
 `5db2234a-2c24-4e45-8b08-a6d1e569333f`
+#### checking sync status
+
+```sh
+docker exec -it seafile-client /status.sh
+```
 
 #### Tech info
 
