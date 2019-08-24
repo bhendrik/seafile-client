@@ -13,10 +13,14 @@ To run the seafile-client container (this assumes you are a member of the docker
 ```sh
 docker run -d --name seafile-client \
   -v /your/data/path:/data \
+  -v /your/config/path:/home/sfuser/seafile-client/seafile-data \
   --restart unless-stopped \
   bhendrik/seafile-client:latest
 ```
 This command will mount folder `/your/data/path` at the local server to the docker instance. You can find your libraries under this folder.
+
+Your config is saved in `/your/config/path`, so with subsequent pulls you´ll retain your configured libraries.
+
 Sync is running in the container as user sfuser with UID 1000 and GUID 1000, make sure the folder on your server can be written to it by the user on your server with UID 1000.
 
 Once the container is started you can add a library to sync.
