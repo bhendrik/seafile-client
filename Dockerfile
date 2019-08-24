@@ -20,4 +20,5 @@ RUN mkdir /home/sfuser/seafile-client
 RUN seaf-cli init -d  /home/sfuser/seafile-client
 USER root
 VOLUME ["/data"]
+VOLUME ["/home/sfuser/seafile-client/seafile-data"]
 CMD ["/sbin/my_init"]
