@@ -31,7 +31,7 @@ Once the container is running, you can add a library:
 e.g.
 
 ```sh
-docker exec -it seafile-client /sync.sh
+docker exec -it seafile-client /bin/bash /sync.sh
 ```
 
 ```sh
@@ -57,7 +57,7 @@ e.g.
 #### checking sync status
 
 ```sh
-docker exec -it seafile-client /status.sh
+docker exec -it seafile-client /bin/bash /status.sh
 ```
 
 #### Tech info
