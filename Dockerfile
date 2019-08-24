@@ -4,6 +4,7 @@ MAINTAINER Bram Hendriks <bhendrik@gmail.com>
 RUN groupadd -r -g 1000 sfuser \
   && useradd -r -m -u 1000 -g 1000 sfuser
 COPY sync.sh /sync.sh
+COPY status.sh /status.sh
 RUN touch /etc/apt/sources.list.d/seaf.list \
   && echo deb [trusted=yes] http://ppa.launchpad.net/seafile/seafile-client/ubuntu bionic main >> /etc/apt/sources.list.d/seaf.list \
   && echo deb-src [trusted=yes] http://ppa.launchpad.net/seafile/seafile-client/ubuntu bionic main >> /etc/apt/sources.list.d/seaf.list \
