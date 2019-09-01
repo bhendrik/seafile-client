@@ -2,7 +2,7 @@
 
 - [Docker](https://docker.com/) is an open source project to pack, ship and run any Linux application in a lighter weight, faster container than a traditional virtual machine.
 
-- Docker makes it much easier to deploy [a Seafile clien (cli only)](https://github.com/haiwen/seafile-client) on your servers and keep it updated.
+- Docker makes it much easier to deploy [a Seafile client (cli only)](https://github.com/haiwen/seafile-client) on your servers and keep it updated.
 
 If you are not familiar with docker commands, please refer to [docker documentation](https://docs.docker.com/engine/reference/commandline/cli/).
 
