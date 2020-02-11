@@ -1,4 +1,4 @@
-s## About
+## About Docker
 
 - [Docker](https://docker.com/) is an open source project to pack, ship and run any Linux application in a lighter weight, faster container than a traditional virtual machine.
 
